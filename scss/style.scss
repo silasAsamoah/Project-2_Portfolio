@@ -1,0 +1,24 @@
+/*=====FONTS======*/
+//online
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+//local
+@import "../asserts/fonts/barlowCondensed-webfont/_font";
+@import "../asserts/fonts/YanoneKaffeesatz-webfont/_font";
+
+/*==================*/
+
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+}   
+body,html{
+    scroll-behavior: smooth;
+    //font-family: 'Barlow Condensed','Yanone Kaffeesatz',sans-serif;
+    color: #fff;
+    width: 100vw;
+}
+
+
+@import "landing_page";
