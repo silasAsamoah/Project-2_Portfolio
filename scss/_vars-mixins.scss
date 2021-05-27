@@ -1,0 +1,23 @@
+/* VARIABLES */
+
+$header-height: 3rem;
+/* Colors */
+$hue-color: 250;
+
+// HSL Color Mode
+$first-color: hsl($hue-color,69%,61%);  //hsl(hue,saturation,lightness)
+$first-color-second:hsl($hue-color,69%,61) ;
+$first-color-alt:hsl($hue-color,57%,53) ;
+$first-color-lighter:hsl($hue-color,92%,85) ;
+$title-color:hsl($hue-color,8%,15) ;
+$text-color:hsl($hue-color,8%,45) ;
+$text-color-light: hsl($hue-color,8%,65);
+$input-color:hsl($hue-color,70%,96) ;
+$body-color: hsl($hue-color,60%,99);
+$container-color:#fff ;
+
+
+/* Font and typpgraphy */
+$primary-font: 'Poppins',sans-serif';
+$secondary-font: '
+$body-font: ;

@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.svg#BarlowCondensed-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Medium.svg#BarlowCondensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BlackItalic.svg#BarlowCondensed-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLightItalic.svg#BarlowCondensed-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBold.svg#BarlowCondensed-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-SemiBoldItalic.svg#BarlowCondensed-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-LightItalic.svg#BarlowCondensed-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-MediumItalic.svg#BarlowCondensed-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraLight.svg#BarlowCondensed-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Italic.svg#BarlowCondensed-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBoldItalic.svg#BarlowCondensed-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ThinItalic.svg#BarlowCondensed-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Thin.svg#BarlowCondensed-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-ExtraBold.svg#BarlowCondensed-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Light.svg#BarlowCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-BoldItalic.svg#BarlowCondensed-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Black.svg#BarlowCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.eot');
+    src: url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.woff2') format('woff2'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.woff') format('woff'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.ttf') format('truetype'),
+        url('../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Bold.svg#BarlowCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
