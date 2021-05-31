@@ -1,15 +1,21 @@
 /*=====FONTS======*/
-//online
+/*online*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-//local
+/*local*/
 @import "../asserts/fonts/barlowCondensed-webfont/_font";
 @import "../asserts/fonts/YanoneKaffeesatz-webfont/_font";
 
 /*==================*/
 
 
+/*=====================*/
+/*variables and mixings*/
+@import "vars-mixins";
 
+/*global styles */
+@import "global_styles";
 
+/*sections and pages*/
 @import "landing_page";
-@import "vars-mixins"
+

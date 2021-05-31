@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 $header-height: 3rem;
-/* Colors */
+// Colors */
 $hue-color: 250;
 
 // HSL Color Mode
@@ -17,7 +17,54 @@ $body-color: hsl($hue-color,60%,99);
 $container-color:#fff ;
 
 
-/* Font and typpgraphy */
-$primary-font: 'Poppins',sans-serif';
-$secondary-font: '
-$body-font: ;
+// Font and typpgraphy */
+// ____sm=small screnn, lg=large screen___
+$unit: 'rem';
+$primary-font: 'Poppins';
+$secondary-font:  "'Barlow Condensed','Yanone Kaffeesatz',sans-serif";
+$body-font: $primary-font,$secondary-font;
+$big-font-size: 2$unit;
+$h1-font-size: 1.5$unit;
+$h2-font-size: 1.25$unit;
+$h3-font-size: 1.125$unit;
+$normal-font-size: .938$unit;
+$small-font-size: .813$unit;
+$smaller-font-size: .75$unit;
+
+//======= font Weight =========*/
+$font-semi-bold: 500;
+$font-bold: 600;
+
+/*======== margin bottom =====*/
+// .25rem =4px, .5rem =8px, .75rem=12px ...*/
+$mb-0-25: .25$unit; 
+$mb-0-5: .5$unit; 
+$mb-0-75: .75$unit; 
+$mb-1: 1$unit; 
+$mb-2: 2$unit; 
+$mb-3: 3$unit; 
+
+//======== z index =======//
+$z-tooltip:10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+// Screem Sizes /media queries.//
+$large-screen: 980px;
+
+@media screen and (max-width: $large-screen) {
+    $big-font-size: 3$unit;
+    $h1-font-size: 2.25$unit;
+    $h2-font-size: 1.5$unit;
+    $h3-font-size: 1.25$unit;
+    $normal-font-size: 1$unit;
+    $small-font-size: .875$unit;
+    $smaller-font-size: .813$unit;
+
+}
+
+/* MIXINS */
+
+
+
+

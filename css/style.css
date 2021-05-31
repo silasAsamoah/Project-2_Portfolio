@@ -1,5 +1,7 @@
 /*=====FONTS======*/
+/*online*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*local*/
 @font-face {
   font-family: 'Barlow Condensed';
   src: url("../asserts/fonts/barlowCondensed-webfont/BarlowCondensed-Regular.eot");
@@ -217,6 +219,67 @@
 }
 
 /*==================*/
+/*=====================*/
+/*variables and mixings*/
 /* VARIABLES */
-/* Colors */
-/* Font and typpgraphy */
+/*======== margin bottom =====*/
+/* MIXINS */
+/*global styles */
+/* global styles*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", "'Barlow Condensed','Yanone Kaffeesatz',sans-serif";
+  font-size: 0.938 "rem";
+  background-color: #fbfbfe;
+  color: #6d6a7c;
+}
+
+html body h1, html body h2, html body h3, html body h4 {
+  color: #242329;
+  font-weight: 600;
+}
+
+html body ul {
+  list-style: none;
+}
+
+html body a {
+  text-decoration: none;
+}
+
+html body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.sectionTitle {
+  font-size: 0.813 "rem";
+}
+
+.sectionSubtitle {
+  display: block;
+  font-size: 0.813 "rem";
+  margin-bottom: 3 "rem";
+}
+
+.sectionTitle,
+.sectionSubtitle {
+  text-align: center;
+}
+
+/*sections and pages*/
