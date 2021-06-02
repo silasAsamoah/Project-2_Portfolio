@@ -1,0 +1,85 @@
+/* Header */
+
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $body-color;
+
+    .nav{
+        max-width: $screen-968 ;
+        height: $header-height;
+        @include flex(0,space-between,center);
+
+        .nav_logo,
+        .nav_toggle{
+            color: $title-color;
+            font-weight: $font-semi-bold;
+
+            &:hover{
+                color: $first-color;
+            }
+        }
+        .nav__toggle{
+            font-size: 1.1rem;
+            cursor: pointer;
+
+            &:hover{
+                color: $first-color;
+            }
+        }
+        .nav__list{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .nav__link{
+            @include flex(column,0,center); 
+            font-size: $small-font-size;
+            color: $title-color;
+            font-weight: $font-semi-bold;
+
+            &:hover{
+                color: $first-color;
+            }
+        }
+        .nav__icon{
+            font-size: 1.2rem;
+        }
+
+        .nav__close{
+            position: absolute;
+            right: 1.3rem;
+            bottom: .5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $first-color;
+
+            &:hover{
+                color: $first-color-alt;
+            }
+        }
+    }
+}
+
+
+// For Small Screen Devices.
+@media screen and (max-width: $screen-767){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;  //hide menu 
+        left: 0;
+        width: 100%;
+        background-color: $body-color;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+    .show__menu{
+        bottom: 0;
+    }
+}
+
