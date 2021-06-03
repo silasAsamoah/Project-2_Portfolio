@@ -10,7 +10,7 @@
 
 
 /*=====================*/
-/*variables and mixings*/
+/*variables, mixins, media queries, functions and all*/
 @import "vars-mixins";
 
 /*global styles */
@@ -21,4 +21,5 @@
 
 /*sections and pages*/
 @import "home";
+@import "about";
 
