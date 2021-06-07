@@ -25,3 +25,30 @@ function linkAction(){
     navMenu.classList.remove('show__menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+
+
+//SKILLS -- toggle skills
+const skillsContent = document.getElementsByClassName('skills__content'),
+      skillsHeader = document.querySelectorAll('.skills__header')
+
+function toggleSkills(){
+    //set current active class
+    let itemClass = this.parentNode.className
+
+    //iterate through skills content classes -3 in all
+    // and close each
+    for(i=0; i< skillsContent.length;i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    //if the active class is closed, open it
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+}
+
+//open active class on click.
+skillsHeader.forEach((el) =>{
+    el.addEventListener('click', toggleSkills)
+})

@@ -47,16 +47,16 @@ body{
 .section{
     padding: 2rem 0 4rem;
 }
-.section_title{
-    font-size: $small-font-size;
+.section__title{
+    font-size: $h2-font-size;
 }
-.section_subtitle{
+.section__subtitle{
     display: block;
     font-size: $small-font-size;
     margin-bottom: $mb-3;
 }
-.section_title,
-.section_subtitle{
+.section__title,
+.section__subtitle{
     text-align: center;
 }
 
@@ -69,4 +69,27 @@ body{
 .grid{
     display: grid;
     gap: 1.5rem;
+}
+
+// Buttons
+.btn{
+    display: inline-block;
+    background-color: $first-color;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: $font-semi-bold;
+    &:hover{
+        background-color: $first-color-alt;
+    }
+    .btn__icon{
+        font-size: 1.25rem;
+        margin-left: $mb-0-5;
+        transition: .3s;
+    }
+}
+
+.btn__flex{
+    display: inline-flex;
+    align-items: center;
 }

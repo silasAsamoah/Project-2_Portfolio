@@ -46,28 +46,12 @@
             .home__description{
                 margin-bottom: $mb-2;
             }
-            .btn{
-                display: inline-block;
-                background-color: $first-color;
-                color: #fff;
-                padding: 1rem;
-                border-radius: .5rem;
-                font-weight: $font-semi-bold;
-                &:hover{
-                    background-color: $first-color-alt;
-                }
-                .btn__icon{
-                    font-size: 1.25rem;
-                    margin-left: $mb-0-5;
-                    transition: .3s;
-                }
-            }
         }
 
     } 
     //scroll down 
     .home__scroll{
-        // display: none;
+        display: none;
         .home__scroll-btn{
             color: $first-color;
             transition: .3s;
@@ -87,10 +71,6 @@
                 font-size: 1.25rem;
             }
         }
-    }
-    .btn__flex{
-        // display: inline-flex;
-        align-items: center;
     }
 }
 

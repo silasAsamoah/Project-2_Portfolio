@@ -1,0 +1,113 @@
+.skills{
+
+    .skills__container{
+        row-gap: 0;
+
+        .skills__content{
+            
+            .skills__header{   //skill header
+                display: flex;
+                align-items: center;
+                margin-bottom: $mb-2-5;
+                cursor: pointer;
+
+                .skills__icon,
+                .skills__arrow{
+                    font-size: 2rem;
+                    color: $first-color;
+                }
+                .skills__icon{
+                    margin-right: $mb-0-75;
+                }
+                .skills__title{
+                    font-size: $h3-font-size;
+                }
+                .skills__subtitle{
+                    font-size: $small-font-size;
+                    color: $text-color-light;
+                }
+                .skills__arrow{
+                    margin-left: auto;
+                    transition: .4s;
+                }
+            }
+            
+            .skills__list{   // skill data
+                row-gap: 1.5rem;
+                padding-left: 2.7rem;
+
+                .skills__titles{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $mb-0-5;
+                }
+                .skills__name{
+                    font-size: $normal-font-size;
+                    font-weight: $font-semi-bold;
+                }
+                .skills__bar,
+                .skills__percentage{
+                    height: 5px;
+                    border-radius: .25rem;
+                }
+                .skills__bar{
+                    background-color: $first-color-lighter;
+                }
+                .skills__percentage{
+                    display: block;
+                    background-color: $first-color;
+                }
+                //-ONE
+                .subskills-1__one{ //microsoft excell
+                    width: 90%;
+                }
+                .subskills-1__two{ //power BI
+                    width: 60%;
+                }
+                .subskills-1__three{ //VBA
+                    width: 50%;
+                }
+                //-TWO
+                .subskills-2__one{ //AutoCAD
+                    width: 85%;
+                }
+                .subskills-2__two{ //PVCAD
+                    width: 75%;
+                }
+                .subskills-2__three{ //Sketchup
+                    width: 80%;
+                }
+                .subskills-2__four{ //Blender
+                    width: 50%;
+                }
+                //-THREE
+                .subskills-3__one{ //PVSol
+                    width: 95%;
+                }
+                .subskills-3__two{ //PVSyst
+                    width: 90%;
+                }
+                .subskills-3__three{ //HOMER
+                    width: 55%;
+                }
+                .subskills-3__four{ //Helioscope
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list{
+    height: max-content;
+    margin-bottom: $mb-2-5;
+}
+
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
