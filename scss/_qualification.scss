@@ -1,0 +1,69 @@
+.qctn{
+    .qctn__container{
+        .qctn__tabs{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: $mb-2;
+
+            .qctn__btn{
+                font-size:$h3-font-size ;
+                font-weight: $font-semi-bold;
+                cursor: pointer;
+                &:hover{
+                    color: $first-color;
+                }
+                .qctn__icon{
+                    font-size: 1.8rem;
+                    margin-right: $mb-0-25;
+                }
+            }
+            .qctn__active{
+                color: $first-color;
+            }
+        }
+
+        .qctn__section{
+            .qctn__content{
+                .qctn__data{
+                    display: grid;
+                    grid-template-columns: 1fr max-content 1fr;
+                    column-gap: 1.5rem;
+                    .qctn__title{
+                        font-size: $normal-font-size;
+                        font-weight: $font-semi-bold;
+                    }
+                    .qctn__subtitle{
+                        display: inline-flex;
+                        font-size: $small-font-size;
+                        margin-bottom: $mb-1;
+                    }
+                    .qctn__calendar{
+                        font-size: $smaller-font-size;
+                        color: $text-color-light;
+                    }
+                    .qctn__rounder{
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        background-color: $first-color;
+                        border-radius: 50%;
+                    }
+                    .qctn__line{
+                        display: block;
+                        width: 1px;
+                        height: 100%;
+                        background-color: $first-color;
+                        transform: translate(6px,-7px);
+                    }
+                }
+            }
+            [data-content]{
+                display: none;
+            }
+            .qctn__active[data-content]{
+                display: block;
+            }
+
+        }
+    }
+}
