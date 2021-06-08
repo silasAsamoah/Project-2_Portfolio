@@ -47,8 +47,28 @@ function toggleSkills(){
         this.parentNode.className = 'skills__content skills__open'
     }
 }
-
 //open active class on click.
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
+})
+
+
+//QUALIFICATION -- toggle 
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click',() =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('qctn__active')
+        })
+        target.classList.add('qctn__active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('qctn__active')
+        })
+        tab.classList.add('qctn__active')
+    })
 })

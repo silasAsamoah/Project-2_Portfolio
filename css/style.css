@@ -245,7 +245,7 @@ html {
 
 body {
   margin: 0 0 3rem 0;
-  font-family: "Poppins", "'Barlow Condensed','Yanone Kaffeesatz',sans-serif";
+  font-family: "Poppins", "Barlow Condensed", "Yanone Kaffeesatz", sans-serif;
   font-size: 0.938rem;
   background-color: #fbfbfe;
   color: #6d6a7c;
@@ -719,4 +719,86 @@ body img {
 .skills__open .skills__arrow {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+.qctn .qctn__container .qctn__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.qctn .qctn__container .qctn__tabs .qctn__btn {
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.qctn .qctn__container .qctn__tabs .qctn__btn:hover {
+  color: #6e57e0;
+}
+
+.qctn .qctn__container .qctn__tabs .qctn__btn .qctn__icon {
+  font-size: 1.8rem;
+  margin-right: 0.25rem;
+}
+
+.qctn .qctn__container .qctn__tabs .qctn__active {
+  color: #6e57e0;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content 1fr;
+      grid-template-columns: 1fr -webkit-max-content 1fr;
+      grid-template-columns: 1fr max-content 1fr;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data .qctn__title {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data .qctn__subtitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.813rem;
+  margin-bottom: 1rem;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data .qctn__calendar {
+  font-size: 0.75rem;
+  color: #a19fad;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data .qctn__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #6e57e0;
+  border-radius: 50%;
+}
+
+.qctn .qctn__container .qctn__section .qctn__content .qctn__data .qctn__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #6e57e0;
+  -webkit-transform: translate(6px, -7px);
+          transform: translate(6px, -7px);
+}
+
+.qctn .qctn__container .qctn__section [data-content] {
+  display: none;
+}
+
+.qctn .qctn__container .qctn__section .qctn__active[data-content] {
+  display: block;
 }
