@@ -11,7 +11,9 @@
     .nav{
         max-width: $screen-968 ;
         height: $header-height;
-        @include flex(0,space-between,center);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .nav_logo,
         .nav_toggle{
@@ -36,7 +38,9 @@
         }
 
         .nav__link{
-            @include flex(column,0,center); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             font-size: $small-font-size;
             color: $title-color;
             font-weight: $font-semi-bold;

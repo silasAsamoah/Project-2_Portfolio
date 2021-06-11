@@ -37,6 +37,10 @@
         .about__btn{
             display: flex;
             justify-content: center;
+
+            &:hover { //twindle animation
+                @include icon-wobble-y;
+            }
         }
     }
 }

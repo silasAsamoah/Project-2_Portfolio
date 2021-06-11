@@ -46,6 +46,11 @@
             .home__description{
                 margin-bottom: $mb-2;
             }
+            .btn{
+                &:hover { //twindle animation
+                    @include icon-wobble-x;
+                }
+            }
         }
 
     } 

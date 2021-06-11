@@ -67,11 +67,100 @@ $z-modal: 1000;
 }
 
 /* MIXINS */
-@mixin flex($direction,$justify-content,$align-items) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
+
+@mixin hacks(){
+    transform: perspective(1px) translateZ(0); //reduce blur in chrome
+    box-shadow: 0 0 1px rgba(0,0,0,0);   //aliasing in mob/tabs
+    // display:inline-block;     //!impo for transform
+    vertical-align:middle;     //!impo for transform
+}
+
+@keyframes wobble_x { //move forward and back
+	16.65% {
+		transform: translateX(6px);
+	}
+
+	33.3% {
+		transform: translateX(-5px);
+	}
+
+	49.95% {
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		transform: translateX(1px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes wobble_y { //move up and down
+	16.65% {
+		transform: translateY(8px);
+	}
+
+	33.3% {
+		transform: translateY(-6px);
+	}
+
+	49.95% {
+		transform: translateY(4px);
+	}
+
+	66.6% {
+		transform: translateY(-2px);
+	}
+
+	83.25% {
+		transform: translateY(1px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@mixin icon-wobble-x {
+	@include hacks();
+	transition-duration: 0.2s;
+
+	.btn__icon {transform: translateZ(0);}
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		.btn__icon {
+			animation-name: wobble_x;  //using the wobble keyframe
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 1;
+		}
+	}
+}
+@mixin icon-wobble-y {
+	@include hacks();
+	transition-duration: 0.2s;
+
+
+	&:hover,
+	&:focus,
+	&:active {
+
+		.btn__icon {
+			animation-name: wobble_y;  //using the wobble keyframe
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 1;
+		}
+	}
 }
 
 
