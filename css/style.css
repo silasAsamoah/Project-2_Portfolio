@@ -1096,3 +1096,85 @@ body img {
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+.portfolio .portfolio__container {
+  overflow: initial;
+}
+
+.portfolio .portfolio__container .portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__image {
+  width: 265px;
+  border-radius: .5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__title {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__description {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__btn:hover {
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  vertical-align: middle;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__btn:hover .btn__icon {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__btn:hover:hover .btn__icon, .portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__btn:hover:focus .btn__icon, .portfolio .portfolio__container .portfolio__content .portfolio__data .portfolio__btn:hover:active .btn__icon {
+  -webkit-animation-name: wobble_x;
+          animation-name: wobble_x;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.portfolio .portfolio__container .swiper-button-prev::after,
+.portfolio .portfolio__container .swiper-button-next::after {
+  content: '';
+}
+
+.portfolio .portfolio__container .swiper-portfolio-icon {
+  font-size: 2rem;
+  color: #6e57e0;
+}
+
+.portfolio .portfolio__container .swiper-button-next {
+  right: -.5rem;
+}
+
+.portfolio .portfolio__container .swiper-button-prev {
+  left: -.5rem;
+}
+
+.portfolio .portfolio__container .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.portfolio .portfolio__container .swiper-pagination-bullet-active {
+  background-color: #6e57e0;
+}
+
+.portfolio .portfolio__container .swiper-button-prev,
+.portfolio .portfolio__container .swiper-button-next,
+.portfolio .portfolio__container .swiper-pagination-bullet {
+  outline: none;
+}
