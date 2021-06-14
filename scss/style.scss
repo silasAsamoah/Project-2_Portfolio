@@ -16,10 +16,8 @@
 /*global styles */
 @import "global_styles";
 
-/* navigation bar*/
-@import "header";
-
 /*sections and pages*/
+@import "header";
 @import "home";
 @import "about";
 @import "skills";

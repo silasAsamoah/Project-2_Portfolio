@@ -451,7 +451,7 @@ body img {
   color: #5a43cb;
 }
 
-/* navigation bar*/
+/*sections and pages*/
 /* Header */
 .header {
   width: 100%;
@@ -476,14 +476,14 @@ body img {
           align-items: center;
 }
 
-.header .nav .nav_logo,
-.header .nav .nav_toggle {
+.header .nav .nav__logo,
+.header .nav .nav__toggle {
   color: #242329;
   font-weight: 500;
 }
 
-.header .nav .nav_logo:hover,
-.header .nav .nav_toggle:hover {
+.header .nav .nav__logo:hover,
+.header .nav .nav__toggle:hover {
   color: #6e57e0;
 }
 
@@ -540,7 +540,7 @@ body img {
 }
 
 @media screen and (max-width: 767px) {
-  .nav__menu {
+  .header .nav__menu {
     position: fixed;
     bottom: -100%;
     left: 0;
@@ -553,12 +553,11 @@ body img {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .show__menu {
+  .header .show__menu {
     bottom: 0;
   }
 }
 
-/*sections and pages*/
 .home__container {
   gap: 1rem;
 }
@@ -657,8 +656,24 @@ body img {
 }
 
 .home__container .home__scroll .home__scroll-btn:hover {
-  -webkit-transform: translateY(0.25rem);
-          transform: translateY(0.25rem);
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  vertical-align: middle;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.home__container .home__scroll .home__scroll-btn:hover:hover .btn__icon, .home__container .home__scroll .home__scroll-btn:hover:focus .btn__icon, .home__container .home__scroll .home__scroll-btn:hover:active .btn__icon {
+  -webkit-animation-name: wobble_y;
+          animation-name: wobble_y;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 .home__container .home__scroll .home__scroll-btn .home__scroll-mouse {
@@ -1097,10 +1112,6 @@ body img {
   visibility: visible !important;
 }
 
-.portfolio .portfolio__container {
-  overflow: initial;
-}
-
 .portfolio .portfolio__container .portfolio__content {
   padding: 0 1.5rem;
 }
@@ -1158,11 +1169,11 @@ body img {
 }
 
 .portfolio .portfolio__container .swiper-button-next {
-  right: -.5rem;
+  right: -0.5rem;
 }
 
 .portfolio .portfolio__container .swiper-button-prev {
-  left: -.5rem;
+  left: -0.5rem;
 }
 
 .portfolio .portfolio__container .swiper-container-horizontal > .swiper-pagination-bullets {

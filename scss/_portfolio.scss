@@ -1,6 +1,5 @@
 .portfolio{
     .portfolio__container{
-        overflow: initial;
 
         .portfolio__content{
             padding: 0 1.5rem;
@@ -37,10 +36,10 @@
             color: $first-color;
         }
         .swiper-button-next{
-            right: -.5rem;
+            right: -0.5rem;
         }
         .swiper-button-prev{
-            left: -.5rem;
+            left: -0.5rem;
         }
         .swiper-container-horizontal > .swiper-pagination-bullets{
             bottom: -2.5rem;

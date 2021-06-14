@@ -61,7 +61,7 @@
             color: $first-color;
             transition: .3s;
             &:hover{
-                transform: translateY(.25rem);
+                @include icon-wobble-y;
             }
             .home__scroll-mouse{
                 font-size: 2rem;

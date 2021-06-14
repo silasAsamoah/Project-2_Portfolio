@@ -15,8 +15,8 @@
         justify-content: space-between;
         align-items: center;
 
-        .nav_logo,
-        .nav_toggle{
+        .nav__logo,
+        .nav__toggle{
             color: $title-color;
             font-weight: $font-semi-bold;
 
@@ -71,7 +71,8 @@
 
 // For Small Screen Devices.
 @media screen and (max-width: $screen-767){
-    .nav__menu{
+    .header{
+        .nav__menu{
         position: fixed;
         bottom: -100%;  //hide menu 
         left: 0;
@@ -81,9 +82,10 @@
         box-shadow: 0 -1px 4px rgba(0,0,0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
-    }
-    .show__menu{
-        bottom: 0;
+        }
+        .show__menu{
+            bottom: 0;
+        }
     }
 }
 
