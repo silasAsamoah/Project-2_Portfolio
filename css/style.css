@@ -451,6 +451,15 @@ body img {
   color: #5a43cb;
 }
 
+.btn__white {
+  background-color: #fff;
+  color: #6e57e0;
+}
+
+.btn__white:hover {
+  background-color: #fff;
+}
+
 /*sections and pages*/
 /* Header */
 .header {
@@ -1188,4 +1197,78 @@ body img {
 .portfolio .portfolio__container .swiper-button-next,
 .portfolio .portfolio__container .swiper-pagination-bullet {
   outline: none;
+}
+
+.project {
+  text-align: center;
+}
+
+.project .project__bg {
+  background-color: #6e57e0;
+  padding-top: 3rem;
+}
+
+.project .project__bg .project__container .project__data .project__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.project .project__bg .project__container .project__data .project__description {
+  margin-bottom: 1.5rem;
+}
+
+.project .project__bg .project__container .project__data .project__title,
+.project .project__bg .project__container .project__data .project__description {
+  color: #fff;
+}
+
+.project .project__bg .project__container .project__img {
+  width: 232px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data .testimonial__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data .testimonial__header .testimonial__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data .testimonial__header .testimonial__name {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data .testimonial__header .testimonial__position {
+  font-size: 0.813rem;
+  color: #a19fad;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__data .testimonial__icon-star {
+  color: #6e57e0;
+}
+
+.testimonial .testimonial__container .testimonial__content .testimonial__description {
+  margin-bottom: 2.5rem;
+}
+
+.testimonial .testimonial__container .swiper-pagination-testimonial {
+  bottom: 0;
 }

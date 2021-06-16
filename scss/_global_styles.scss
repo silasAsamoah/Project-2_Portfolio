@@ -108,4 +108,10 @@ body{
     }
 }
 
-
+.btn__white{
+    background-color: #fff;
+    color: $first-color;
+    &:hover{
+        background-color: #fff;
+    }
+}
