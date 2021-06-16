@@ -57,14 +57,14 @@ body{
 }
 .section__title,
 .section__subtitle{
-    text-align: center;
+    text-align: center !important;
 }
 
 //Layout //
 .container{
-    max-width: 770px;
-    margin-left: $mb-1-5;
-    margin-right: $mb-1-5;
+    max-width: 770px !important;
+    margin-left: $mb-1-5 !important;
+    margin-right: $mb-1-5 !important;
 }
 .grid{
     display: grid;

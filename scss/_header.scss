@@ -7,14 +7,14 @@
     left: 0;
     z-index: $z-fixed;
     background-color: $body-color;
-
+}
     .nav{
         max-width: $screen-968 ;
         height: $header-height;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+    }
         .nav__logo,
         .nav__toggle{
             color: $title-color;
@@ -49,6 +49,7 @@
                 color: $first-color;
             }
         }
+        
         .nav__icon{
             font-size: 1.2rem;
         }
@@ -65,8 +66,12 @@
                 color: $first-color-alt;
             }
         }
-    }
-}
+    
+
+
+            .active__link{
+                color: $first-color;
+            }
 
 
 // For Small Screen Devices.
