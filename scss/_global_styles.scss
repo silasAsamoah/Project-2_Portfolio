@@ -17,7 +17,7 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body,.dark-theme{
     margin:0 0 $header-height 0;
     font-family: $body-font;
     font-size: $normal-font-size;
@@ -113,5 +113,48 @@ body{
     color: $first-color;
     &:hover{
         background-color: #fff;
+    }
+}
+
+
+// scroll_up icon
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: $first-color;
+    opacity: 0.8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: $z-tooltip;
+    transition: .4s;
+
+    &:hover{
+        background-color: $first-color-alt;
+    }
+}
+
+.scrollup__icon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+// show scroll
+.show-scroll{
+    bottom: 5rem;
+}
+
+//SCROLL BAR
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: $scroll-bar-color;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $scroll-thumb-color;
+
+    &:hover{
+        background-color: $text-color-light;
     }
 }

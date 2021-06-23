@@ -139,7 +139,7 @@ let swiperTest = new Swiper(".testimonial__container", {
 
 
 
-//   SCROLL SECTIONS ACTIVE LINK
+//   SCROLL SECTIONS ACTIVE LINK  --change color on active [reuseable]
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -158,3 +158,61 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+
+
+// ADD HEADER BORDER FADE ON SCROLL
+function scrollHeader(){
+    const nav =document.getElementById('header')
+    //when the scroll is greater than 80vh, add the scroll header class to the header tag
+    if(this.scrollY >= 80) nav.classList.add('scroll__header');
+    else nav.classList.remove('scroll__header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+
+
+
+//SHOW SCROLL UP
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+    //when the scroll is higher than xxvh, add the scroll class
+    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+    else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll',scrollUp)
+
+
+
+//=============================================================
+//CHANGE THEME -DARK THEME  ===================================
+const themeButton = document.getElementById('theme-btn'),
+      darkTheme = 'dark-theme',
+      iconTheme = 'uil-sun'
+
+// previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme'),
+      selectedIcon = localStorage.getItem('selected-icon')
+
+// obtain current theme by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+// validate if user previously chose a topic
+if(selectedTheme){
+    //after validation, check if darkmode was previously activated or deactivated.
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// activate or deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    //add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    //save current chosen theme & icon
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+

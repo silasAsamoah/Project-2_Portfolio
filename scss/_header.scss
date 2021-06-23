@@ -8,70 +8,88 @@
     z-index: $z-fixed;
     background-color: $body-color;
 }
-    .nav{
-        max-width: $screen-968 ;
-        height: $header-height;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.nav{
+    max-width: $screen-968 ;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,
+.nav__toggle{
+    color: $title-color;
+    font-weight: $font-semi-bold;
+
+    &:hover{
+    color: $first-color;
     }
-        .nav__logo,
-        .nav__toggle{
-            color: $title-color;
-            font-weight: $font-semi-bold;
+}
+.nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
 
-            &:hover{
-                color: $first-color;
-            }
-        }
-        .nav__toggle{
-            font-size: 1.1rem;
-            cursor: pointer;
+    &:hover{
+    color: $first-color;
+    }
+}
+.nav__btns{
+    display: flex;
+    align-items: center;
+}
+.change__theme{      //sun or moon styling-change theme
+    font-size: 1.25rem;
+    color: $title-color;
+    margin-right: $mb-1;
+    cursor: pointer;
+    &:hover{
+        color: $first-color;
+    }
+}                   //================
 
-            &:hover{
-                color: $first-color;
-            }
-        }
-        .nav__list{
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
+.nav__list{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
 
-        .nav__link{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: $small-font-size;
-            color: $title-color;
-            font-weight: $font-semi-bold;
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $small-font-size;
+    color: $title-color;
+    font-weight: $font-semi-bold;
 
-            &:hover{
-                color: $first-color;
-            }
-        }
-        
-        .nav__icon{
-            font-size: 1.2rem;
-        }
+    &:hover{
+    color: $first-color;
+    }
+}
 
-        .nav__close{
-            position: absolute;
-            right: 1.3rem;
-            bottom: .5rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: $first-color;
+.nav__icon{
+    font-size: 1.2rem;
+}
 
-            &:hover{
-                color: $first-color-alt;
-            }
-        }
-    
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $first-color;
+
+    &:hover{
+    color: $first-color-alt;
+    }
+}
 
 
-            .active__link{
-                color: $first-color;
-            }
+
+.active__link{
+color: $first-color;
+}
+
+.scroll__header{
+box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.5);
+}
 
 
 // For Small Screen Devices.

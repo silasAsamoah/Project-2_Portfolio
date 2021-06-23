@@ -1,3 +1,4 @@
+
 /* VARIABLES */
 $header-height: 3rem; 
 $screen-968: 968px;
@@ -8,16 +9,30 @@ $hue-color:250;    //250: blue, 48: orange, 173:
 
 // HSL Color Mode
 $first-color: hsl($hue-color,69%,61%);  //hsl(hue,saturation,lightness)
-$first-color-second:hsl($hue-color,69%,61) ;
-$first-color-alt:hsl($hue-color,57%,53) ;
-$first-color-lighter:hsl($hue-color,92%,85) ;
-$title-color:hsl($hue-color,8%,15) ;
-$text-color:hsl($hue-color,8%,45) ;
-$text-color-light: hsl($hue-color,8%,65);
-$input-color:hsl($hue-color,70%,96) ;
-$body-color: hsl($hue-color,60%,99);
-$container-color:#fff ;
+// $first-color-second:hsl($hue-color,69%,61%) ;
+$first-color-alt:hsl($hue-color,57%,53%) ;
+$first-color-lighter:hsl($hue-color,92%,85%) ;
+// $title-color:hsl($hue-color,8%,15%) ;
+// $text-color:hsl($hue-color,8%,45%) ;
+$text-color-light: hsl($hue-color,8%,65%);
+$input-color:hsl($hue-color,70%,96%) ;
+// $body-color: hsl($hue-color,60%,99%);
+$scroll-bar-color: hsl($hue-color,12%,90%);
+$scroll-thumb-color: hsl($hue-color,12%,80%);
+// $container-color:#fff ;
 
+
+// ========DARK THEME VARIABLES
+//.dark-theme{
+	$first-color-second:hsl($hue-color,30%,8%);
+	$title-color:hsl($hue-color,8%,95%) ;
+	$text-color:hsl($hue-color,8%,75%) ;
+	$input-color:hsl($hue-color,29%,16%) ;
+	$body-color: hsl($hue-color,28%,12%);
+	$container-color:hsl($hue-color,29%,16%);
+	// $scroll-bar-color: hsl($hue-color,12%,48%);
+    // $scroll-thumb-color: hsl($hue-color,12%,36%);
+//}
 
 // Font and typpgraphy */
 // ____sm=small screnn, lg=large screen___
@@ -53,18 +68,6 @@ $z-tooltip:10;
 $z-fixed: 100;
 $z-modal: 1000;
 
-// Screem Sizes /media queries.//
-
-@media screen and (max-width: $screen-968) {
-    $big-font-size: 3rem;
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-    $h3-font-size: 1.25rem;
-    $normal-font-size: 1rem;
-    $small-font-size: .875rem;
-    $smaller-font-size: .813rem;
-
-}
 
 /* MIXINS */
 
@@ -165,3 +168,40 @@ $z-modal: 1000;
 
 
 
+// Screem Sizes /media queries.//
+@media screen and (max-width: $screen-968) {
+    $big-font-size: 3rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.5rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+
+}
+
+@media screen and (max-width: 350px){
+	.container{
+		margin-left: $mb-1;
+		margin-right: $mb-1;
+	}
+
+	.nav__menu{
+		padding: 2rem .25rem 4rem;
+	}
+	.nav__list{
+		column-gap: 0;
+	}
+	.home__content{
+		grid-template-columns: .25fr 3fr;
+	}
+	.home__blob{
+		width: 180px;
+	}
+	.skill__title{
+		font-size: $normal-font-size;
+	}
+	.qctn{
+		gap: .5rem;
+	}
+}
