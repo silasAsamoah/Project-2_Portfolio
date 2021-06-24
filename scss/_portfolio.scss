@@ -1,56 +1,55 @@
-.portfolio{
-    .portfolio__container{
+// .portfolio{
+//     .portfolio__container{
 
-        .portfolio__content{
-            padding: 0 1.5rem;
-            
-            .portfolio__image{
-                width: 265px;
-                border-radius: .5rem;
-                justify-self: center;
-
-            }
-            .portfolio__data{
-
-                .portfolio__title{
-                    font-size: $h3-font-size;
-                    margin-bottom: $mb-0-25;
-                }
-                .portfolio__description{
-                    margin-bottom: $mb-0-75;
-                }
-                .portfolio__btn{
-                    &:hover{
-                        @include icon-wobble-x;
-                    }
-                }
-            }
-        }
-
-        .swiper-button-prev::after,
-        .swiper-button-next::after{
-            content: '';
-        }
-        .swiper-portfolio-icon{
-            font-size: 2rem;
-            color: $first-color;
-        }
-        .swiper-button-next{
-            right: -0.5rem;
-        }
-        .swiper-button-prev{
-            left: -0.5rem;
-        }
-        .swiper-container-horizontal > .swiper-pagination-bullets{
-            bottom: -2.5rem;
-        }
-        .swiper-pagination-bullet-active{
-            background-color: $first-color;
-        }
-        .swiper-button-prev,
-        .swiper-button-next,
-        .swiper-pagination-bullet{
-            outline: none;
-        }
-    }
+.portfolio__content{
+padding: 0 1.5rem;
 }
+.portfolio__image{
+width: 265px;
+border-radius: .5rem;
+justify-self: center;
+
+}
+// .portfolio__data{
+
+.portfolio__title{
+font-size: $h3-font-size;
+margin-bottom: $mb-0-25;
+}
+.portfolio__description{
+margin-bottom: $mb-0-75;
+}
+.portfolio__btn{
+&:hover{
+    @include icon-wobble-x;
+}
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+content: '';
+}
+.swiper-portfolio-icon{
+font-size: 2rem;
+color: $first-color;
+}
+.swiper-button-next{
+right: -0.5rem;
+}
+.swiper-button-prev{
+left: -0.5rem;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+bottom: -2.5rem;
+}
+.swiper-pagination-bullet-active{
+background-color: $first-color;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+outline: none;
+}
+
